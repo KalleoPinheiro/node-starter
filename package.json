@@ -7,7 +7,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "node ./src/app.js"
+    "start": "nodemon ./src/app.js"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -21,6 +21,7 @@
     "git-cz": "^3.3.0",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
+    "nodemon": "^2.0.1",
     "prettier": "^1.19.1",
     "sucrase": "^3.10.1"
   },
