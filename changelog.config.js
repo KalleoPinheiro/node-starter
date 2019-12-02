@@ -2,9 +2,9 @@ module.exports = {
   disableEmoji: false,
   list: [
     'test',
-    'feat',
+    'feature',
     'improvement',
-    'fix',
+    'bugfix',
     'chore',
     'docs',
     'refactor',
@@ -14,14 +14,7 @@ module.exports = {
   ],
   maxMessageLength: 64,
   minMessageLength: 3,
-  questions: [
-    'type',
-    'scope',
-    'subject',
-    'body',
-    'breaking',
-    'issues',
-  ],
+  questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues'],
   scopes: [],
   types: {
     chore: {
@@ -42,17 +35,17 @@ module.exports = {
     feature: {
       description: 'A new feature',
       emoji: '🚀',
-      value: 'feat',
+      value: 'feature',
     },
     improvement: {
       description: 'A improvement for any feature',
       emoji: '⭐',
       value: 'improvement',
     },
-    fix: {
+    bugfix: {
       description: 'A bug fix',
       emoji: '🐞',
-      value: 'fix',
+      value: 'bugfix',
     },
     perf: {
       description: 'A code change that improves performance',
