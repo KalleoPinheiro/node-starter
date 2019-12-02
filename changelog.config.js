@@ -21,7 +21,6 @@ module.exports = {
     'body',
     'breaking',
     'issues',
-    'lerna',
   ],
   scopes: [],
   types: {
