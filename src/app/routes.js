@@ -1,16 +1,6 @@
-const express = require('express');
-const jsonValidator = require('./middlewares/json-validator');
+import { Router } from 'express';
+import indexController from './controllers/index-controller';
 
-const router = express.Router();
+const router = Router();
 
-(() => {
-  router.get('/', (_, res) => {
-    res.status(200).json({ message: 'Working' });
-  });
-
-  router.post('/test', jsonValidator, (req, res) => {
-    res.status(200).json(req.body);
-  });
-
-  module.exports = router;
-})();
+router.get('/', indexController.index);
