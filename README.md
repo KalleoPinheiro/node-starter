@@ -1,3 +1,3 @@
-## node-starter
+# node-starter
 
-# 🚀 Node boilerplate with best practices
+## 🚀 Node boilerplate with best practices
