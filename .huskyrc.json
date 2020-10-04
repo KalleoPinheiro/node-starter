@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "prepare-commit-msg": "exec < /dev/tty",
+    "pre-push": "yarn test:ci"
+  }
+}

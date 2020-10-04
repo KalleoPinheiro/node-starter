@@ -1,0 +1,15 @@
+{
+  "preset": "ts-jest",
+  "collectCoverageFrom": [
+    "**/*.{ts,tsx}",
+    "!**/node_modules/**",
+    "!**/dist/**"
+  ],
+  "coverageDirectory": "coverage",
+  "roots": ["<rootDir>/src"],
+  "testEnvironment": "node",
+  "transform": {
+    ".+\\.ts$": "ts-jest"
+  },
+  "moduleFileExtensions": ["ts", "js"]
+}
