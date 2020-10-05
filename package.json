@@ -16,7 +16,7 @@
     "test": "jest --config '.jestrc.json' --passWithNoTests --silent --noStackTrace --runInBand --bail",
     "test:dev": "yarn test --watch",
     "test:staged": "yarn test --findRelatedTests",
-    "test:ci": "yarn test --coverage",
+    "test:ci": "yarn test --no-cache --coverage",
     "commit": "git-cz"
   },
   "devDependencies": {

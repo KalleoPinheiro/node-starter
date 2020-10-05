@@ -6,8 +6,6 @@ export interface IEnvironmentsConfig {
   clientUrl: string
 }
 
-console.log(process.env.NODE_ENV)
-
 export const environmentsConfig: IEnvironmentsConfig = {
   nodeEnv: (process.env.NODE_ENV as NodeEnv) ?? 'development',
   port: process.env.PORT ?? '3333',

@@ -24,7 +24,7 @@ const isDevelopment = environmentsConfig.nodeEnv === 'development'
 
 const formatter = format.combine(
   format.colorize(),
-  format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
+  format.timestamp({ format: 'DD-MM-YYYY HH:mm:ss' }),
   format.splat(),
   format.printf(info => {
     const { timestamp, level, message, ...meta } = info
@@ -39,7 +39,6 @@ class WinstonLogger {
   private readonly logger: Logger
 
   constructor() {
-    // Change to Graylog
     const prodTransport = new transports.File({
       filename: 'logs/error.log',
       level: 'error'

@@ -3,7 +3,7 @@ import BaseError from './base-error'
 
 class ServerError extends BaseError {
   constructor(
-    name: 'INTERNAL SERVER',
+    name = 'SERVER ERROR',
     httpCode = HttpStatusCode.INTERNAL_SERVER,
     description = 'internal server error',
     isOperational = true

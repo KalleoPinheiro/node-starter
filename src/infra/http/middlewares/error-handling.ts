@@ -1,5 +1,4 @@
 import { NextFunction, Request, Response } from 'express'
-import ErrorHandler from '../errors/error-handler'
 
 class ErrorHandling {
   public async handle(
@@ -7,11 +6,12 @@ class ErrorHandling {
     request: Request,
     response: Response,
     next: NextFunction
-  ): Promise<void> {
-    if (!ErrorHandler.isTrustedError(error)) {
-      next(error)
-    }
-    ErrorHandler.handleError(error)
+  ): Promise<Response> {
+    return response.status(500).send({
+      title: `${error?.name ?? 'Error!'}: something failed!`,
+      message: error?.message,
+      stack: error?.stack
+    })
   }
 }
 

@@ -1,12 +1,9 @@
-import BaseError from './base-error'
 import { logger } from '../../logger/winston'
+import BaseError from './base-error'
 
 class ErrorHandler {
   public handleError(err: Error): void {
-    logger.error(
-      'Error message from the centralized error-handling component',
-      err
-    )
+    logger.error(`Something went wrong!  Details:`, err)
   }
 
   public isTrustedError(error: Error): boolean {
